@@ -131,8 +131,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "base-ref": "/angulargirlskc-slides/",
-            "branch": "master"
+            "base-ref": "/angulargirlskc-slides/"
           }
         }
       }
