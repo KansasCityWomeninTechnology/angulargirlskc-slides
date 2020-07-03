@@ -127,6 +127,12 @@
               "devServerTarget": "angulargirlskc-slides:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "base-ref": "/angulargirlskc-slides/"
+          }
         }
       }
     }
