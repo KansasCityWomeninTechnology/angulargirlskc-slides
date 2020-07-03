@@ -4,20 +4,8 @@
     <h1 class="ml-3 text-5xl font-header text-darkRed">Kansas City 2020</h1>
   </header>
 
-  <main class="mx-auto flex-grow">
+  <main class="mx-auto flex-grow w-10/12">
     <ng-template [cdkPortalOutlet]="slide$ | async"></ng-template>
-<!--    <div [ngSwitch]="slide$ | async">-->
-<!--      <ng-container *ngSwitchCase="0">-->
-<!--        <app-links></app-links>-->
-<!--      </ng-container>-->
-<!--      <ng-container *ngSwitchCase="1">-->
-<!--        <app-schedule></app-schedule>-->
-<!--      </ng-container>-->
-<!--      <ng-container *ngSwitchCase="2">-->
-<!--        <app-social></app-social>-->
-<!--      </ng-container>-->
-<!--    </div>-->
-
   </main>
 
   <footer class="mb-4 flex justify-center items-center text-darkCyan">

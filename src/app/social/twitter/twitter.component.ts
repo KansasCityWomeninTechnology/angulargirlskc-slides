@@ -13,7 +13,7 @@ export class TwitterComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    (<any>window).twttr.widgets.load();
+    (window as any).twttr.widgets.load();
   }
 
 }

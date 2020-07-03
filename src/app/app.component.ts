@@ -3,7 +3,7 @@ import { ComponentPortal } from '@angular/cdk/portal';
 import { LinksComponent } from './links/links.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { SocialComponent } from './social/social.component';
-import { interval, Observable } from 'rxjs';
+import {interval, Observable, of} from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
 @Component({
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     new ComponentPortal(SocialComponent)
   ];
 
-  public slide$: Observable<ComponentPortal<any>>; // Observable<number>;
+  public slide$: Observable<ComponentPortal<any>>;
 
 
   constructor() {}
