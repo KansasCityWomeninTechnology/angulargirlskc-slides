@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     new ComponentPortal(SocialComponent)
   ];
 
-  public slide$: Observable<ComponentPortal<any>>; // Observable<number>;
+  public slide$: Observable<ComponentPortal<any>>;
 
 
   constructor() {}
