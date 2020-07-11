@@ -8,6 +8,6 @@ Hosted at [https://kansascitywomenintechnology.github.io/angulargirlskc-slides/]
 ## Deploy
 ```sh 
 npm run build:prod
-npx angular-cli-ghpages --dir=diest/angulargirlskc-slides
+npx angular-cli-ghpages --dir=dist/angulargirlskc-slides
 ```
 
