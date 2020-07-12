@@ -3,6 +3,7 @@ import { ComponentPortal } from '@angular/cdk/portal';
 import { LinksComponent } from './links/links.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { SocialComponent } from './social/social.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 import { interval, Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
@@ -14,9 +15,10 @@ import { map, startWith } from 'rxjs/operators';
 export class AppComponent implements OnInit {
 
   private slidesToDisplay: ComponentPortal<any>[] = [
-    new ComponentPortal(LinksComponent),
-    new ComponentPortal(ScheduleComponent),
-    new ComponentPortal(SocialComponent)
+    // new ComponentPortal(LinksComponent),
+    // new ComponentPortal(ScheduleComponent),
+    // new ComponentPortal(SocialComponent),
+    new ComponentPortal(SponsorsComponent)
   ];
 
   public slide$: Observable<ComponentPortal<any>>;
