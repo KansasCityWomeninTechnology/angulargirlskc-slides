@@ -15,9 +15,9 @@ import { map, startWith } from 'rxjs/operators';
 export class AppComponent implements OnInit {
 
   private slidesToDisplay: ComponentPortal<any>[] = [
-    // new ComponentPortal(LinksComponent),
-    // new ComponentPortal(ScheduleComponent),
-    // new ComponentPortal(SocialComponent),
+    new ComponentPortal(LinksComponent),
+    new ComponentPortal(ScheduleComponent),
+    new ComponentPortal(SocialComponent),
     new ComponentPortal(SponsorsComponent)
   ];
 
@@ -28,11 +28,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.slide$ = interval(15000).pipe(
-      // startWith(2),
       startWith(2),
-      // TODO: add things back in and change number
-      // map(num => this.slidesToDisplay[num % 3])
-      map(num => this.slidesToDisplay[num % 1])
+      map(num => this.slidesToDisplay[num % 4])
     );
   }
 }
