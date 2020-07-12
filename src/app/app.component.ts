@@ -28,8 +28,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.slide$ = interval(15000).pipe(
+      // startWith(2),
       startWith(2),
-      map(num => this.slidesToDisplay[num % 3])
+      // TODO: add things back in and change number
+      // map(num => this.slidesToDisplay[num % 3])
+      map(num => this.slidesToDisplay[num % 1])
     );
   }
 }
