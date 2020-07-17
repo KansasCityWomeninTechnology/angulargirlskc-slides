@@ -4,7 +4,8 @@ import { LinksComponent } from './links/links.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { SocialComponent } from './social/social.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
-import { interval, Observable } from 'rxjs';
+import { RafflePrizesComponent } from './raffle-prizes/raffle-prizes.component';
+import {interval, Observable, of} from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
 @Component({
@@ -18,7 +19,8 @@ export class AppComponent implements OnInit {
     new ComponentPortal(LinksComponent),
     new ComponentPortal(ScheduleComponent),
     new ComponentPortal(SocialComponent),
-    new ComponentPortal(SponsorsComponent)
+    new ComponentPortal(SponsorsComponent),
+    new ComponentPortal(RafflePrizesComponent)
   ];
 
   public slide$: Observable<ComponentPortal<any>>;

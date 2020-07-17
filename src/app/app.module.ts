@@ -10,6 +10,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { SocialComponent } from './social/social.component';
 import { TwitterComponent } from './social/twitter/twitter.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
+import { RafflePrizesComponent } from './raffle-prizes/raffle-prizes.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
     SocialComponent,
     TwitterComponent,
     SponsorsComponent,
+    RafflePrizesComponent,
   ],
   imports: [
     BrowserModule,
